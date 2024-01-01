@@ -16,11 +16,11 @@ app.use(cors({
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 }))
-app.get('/', (req, res) => {
-    res.status(200).json({
-        message: "Hmmm.. Its Running BaBy.😏"
-    })
-})
+// app.get('/', (req, res) => {
+//     res.status(200).json({
+//         message: "Hmmm.. Its Running BaBy.😏"
+//     })
+// })
 
 app.use('/api/user', userRoute);
 app.use('/api/post', postRoute);  
