@@ -16,6 +16,8 @@ app.use(cors({
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 }))
-
+app.get('/', (req, res) => {
+    res.sendFile("Hmmm.. Its Running BaBy.😏"); 
+})
 app.use('/api/user',userRoute); 
 app.use('/api/post',postRoute);  
